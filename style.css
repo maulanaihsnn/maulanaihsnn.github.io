@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    height: 830px;
+}
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 4px solid #ddd;
+}
+h2 {
+    text-align: center;
+    color: #31363F;
+}
+h3 {
+    text-align: left;
+    color: #31363F;
+    margin-left: 80px;
+}
+h4 {
+    width: 638px;
+    height: 40px;
+    background-color: #5c9396;
+    border: 1px solid #31363F;
+    display: flex;
+    justify-content: center; /* ratakan secara horizontal */
+    align-items: center; /* ratakan secara vertikal */
+    color: #fff;
+    font-size: 18px;
+    margin: -4px auto;
+}
+
+p {
+    text-align: center;
+    color: #31363F;
+}
+.schedule-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.schedule-table th, .schedule-table td {
+    padding: 10px;
+    border: 1px solid #31363F;
+    text-align: center;
+}
+.schedule-table th {
+    background-color: #76ABAE;
+    color: white;
+}
+.schedule-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Navbar styling */
+.navbar {
+    text-align: center;
+    position: absolute; /* Posisi absolute untuk menempelkannya di bawah .container */
+    bottom: -243px; /* Atur jarak dari bagian bawah container */
+    left: 50%;
+    transform: translateX(-50%); /* Pusatkan secara horizontal */
+    padding: 13px;
+    background-color: #76ABAE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Agar sejalan dengan lebar .container */
+    max-width: 814px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+/* Copyright */
+.footer {
+    text-align: center;
+    position: absolute; /* Posisi absolute untuk menempelkannya di bawah .container */
+    bottom: -300px; /* Atur jarak dari bagian bawah container */
+    padding: 10px;
+    left: 37%;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
