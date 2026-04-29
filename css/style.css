@@ -1,0 +1,258 @@
+:root {
+  --bg: #fdfcf9;
+  --primary: #f2c94c;
+  --dark: #1f1f1f;
+  --soft: #6b6b6b;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  padding-top: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #111;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 700;
+}
+.nav-link {
+  color: #ccc !important;
+}
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* SECTION */
+section {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* BACKGROUND SHAPE */
+section::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(242,201,76,0.25), transparent);
+  top: -80px;
+  right: -80px;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(242,201,76,0.15), transparent);
+  bottom: -60px;
+  left: -60px;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.hero-desc {
+  color: var(--soft);
+}
+
+/* FOTO */
+.photo {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn-main {
+  background: var(--dark);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 24px;
+}
+
+/* TITLE */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* PROFILE */
+.profile-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* EXPERIENCE */
+.exp-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* SKILLS */
+.skill-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+.skill-box i {
+  font-size: 30px;
+  color: var(--primary);
+}
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
+/* SOCIAL */
+.social i {
+  font-size: 22px;
+  margin: 0 10px;
+  color: var(--soft);
+}
+.social i:hover {
+  color: var(--primary);
+}
+
+.profile-modern {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.profile-modern .name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profile-modern .info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--soft);
+}
+
+.profile-modern .desc {
+  max-width: 600px;
+  margin: auto;
+  color: var(--soft);
+}
+
+.profile-modern .address {
+  font-size: 14px;
+  color: var(--soft);
+}
+
+.contact-section {
+  background: linear-gradient(135deg, #2c2c2c, #1f1f1f);
+  padding: 100px 0;
+  position: relative;
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(242,201,76,0.3), transparent);
+  top: -100px;
+  right: -100px;
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(242,201,76,0.15), transparent);
+  bottom: -100px;
+  left: -100px;
+}
+
+.contact-section .social i {
+  color: white;
+  font-size: 24px;
+  margin: 0 12px;
+}
+
+.contact-section .social i:hover {
+  color: var(--primary);
+}
+
+#skills::after {
+  opacity: 0.12;
+}
+
+#experience::after {
+  opacity: 0.08;
+}
+
+#about img {
+  object-fit: cover;
+}
+
+/* FIX SCROLL NAVBAR */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+/* SPACING BIAR ENAK */
+section {
+  padding: 80px 0;
+}
+
+/* BIAR HERO LEBIH CENTER */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+/* FOTO FIX */
+.photo {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* BUTTON HOVER */
+.btn-main:hover {
+  background: var(--primary);
+  color: #111;
+}
+
+/* NAVBAR EFFECT */
+.navbar {
+  transition: 0.3s;
+}
+.navbar.scrolled {
+  background: #000 !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+#about {
+  padding: 20px 0; /* tambahin jarak atas */
+}
+
